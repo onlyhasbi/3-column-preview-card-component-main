@@ -85,16 +85,18 @@ body {
 }
 
 /* --- Main Section --- */
-
 .main {
-  
+  margin: auto;
+  padding: 10rem 0;
 }
 
 .car__list {
+  margin: 0 auto;
   list-style-type: none;
-  width: 90%;
-  max-width: 55rem;
-  margin: auto;
+  width: 100%;
+  max-width: 90%;
+  border-radius: 0.75rem;
+  overflow: hidden;
 }
 
 .car__item {
@@ -127,11 +129,14 @@ body {
 }
 
 @media screen and (min-width: 1024px) {
+  .main {
+    padding: 0;
+  }
+
   .car__list {
     display: flex;
     max-width: 68.1%;
-    border-radius: 0.75rem;
-    overflow: hidden;
+    width: 100%;
   }
 
   .car__title {
