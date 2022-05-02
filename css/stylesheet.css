@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+:root {
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+  --Transparent-white: hsla(0, 0%, 100%, 0.75);
+  --Very-light-gray: hsl(0, 0%, 95%); /*(background, headings, buttons)*/
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+p {
+  color: var(--Transparent-white);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--Very-light-gray);
+}
+
+h1 {
+  font-size: 3.6rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+html,
+body {
+  font-size: 62.5%;
+}
+
+body {
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--Very-light-gray);
+}
+
+/* --- Background Color --- */
+.orange {
+  background: var(--Bright-orange);
+}
+
+.cyan {
+  background: var(--Dark-cyan);
+}
+
+.dark__cyan {
+  background: var(--Very-dark-cyan);
+}
+
+/* --- Text Color --- */
+
+.text__orange {
+  color: var(--Bright-orange);
+}
+
+.text__cyan {
+  color: var(--Dark-cyan);
+}
+
+.text__dark-cyan {
+  color: var(--Very-dark-cyan);
+}
+
+/* --- Button Hover --- */
+
+.btn:hover {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+/* --- Main Section --- */
+
+.main {
+  
+}
+
+.car__list {
+  list-style-type: none;
+  width: 90%;
+  max-width: 55rem;
+  margin: auto;
+}
+
+.car__item {
+  padding: 5rem 5rem;
+}
+
+.car__title {
+  margin: 3rem 0;
+  font-family: "Big Shoulders Display", sans-serif;
+  font-size: 3.6rem;
+  text-transform: uppercase;
+}
+
+.car__text {
+  font-size: 1.5rem;
+  font-family: "Lexend Deca", sans-serif;
+  line-height: 2;
+}
+
+.btn {
+  border: 0;
+  outline: 0;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.learn__more {
+  padding: 1.5rem 3.5rem;
+  margin-top: 2rem;
+  border-radius: 3rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .car__list {
+    display: flex;
+    max-width: 68.1%;
+    border-radius: 0.75rem;
+    overflow: hidden;
+  }
+
+  .car__title {
+    margin: 3.15rem 0;
+    font-size: 3.8rem;
+  }
+
+  .car__text {
+    line-height: 1.6;
+  }
+
+  .learn__more {
+    margin-top: 8rem;
+  }
+
+  .learn__more {
+    margin-top: 9rem;
+  }
+}
